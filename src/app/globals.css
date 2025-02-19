@@ -2,20 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  font-size: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: QuickSand, sans-serif;
+}
+
+.Dossy{
+  font-family: QuickSand, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 30px;
+  line-height: 27px;
+  color:#008ED6 ;
+  
+}
+
+
+.text{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  gap: 24px;
+  line-height: 20px;
+  color:#151414 ;
+}
+.text-2{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 700;
+  gap: 24px;
+  font-size: 18px;
+  line-height: 18px;
+  color:#5A5959 ;
+
+}
+.para{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 400;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color:#5A5959 ;
+  
+}
+.para span{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 600;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color:#5A5959 ;
+}
+
+.private-notes{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 700;
+  gap: 2px;
+  font-size: 20px;
+  line-height: 20px;
+  color:#151414 ;
+  
+}
+.notes{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 700;
+  gap: 2px;
+  font-size: 18px;
+  line-height: 18px;
+  color:#5A5959 ;
+}
+.notes-1{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 400;
+  gap: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  color:#5A5959 ;
+
+}
+
+
+.cont-name{
+  font-family:  QuickSand, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color:#151414 ;
+
+}
+.cont-name span{
+  font-family: QuickSand, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color:#006598 ;
+
 }

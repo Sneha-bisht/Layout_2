@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Quicksand } from "next/font/google";
+import { ChakraProvider } from "@chakra-ui/react"; 
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +10,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -24,10 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} antialiased`}>
+        <ChakraProvider>
+          {children}
+        </ChakraProvider>
       </body>
     </html>
   );
