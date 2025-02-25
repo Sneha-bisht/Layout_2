@@ -7,7 +7,7 @@ import { FaFolderOpen, FaAddressBook, FaCalendarAlt} from "react-icons/fa";
 
 function Sidebar() {
   return (
-    <Box w='240px' bg="#ffffff" shadow="md" minH="100vh" border-right='1px solid grey' >
+    <Box w='250px' bg="#ffffff" shadow="md" minH="100vh" border-right='1px solid grey' >
       <Text className="Dossy" p='10'>
         Dossy
       </Text>
@@ -37,7 +37,7 @@ function Sidebar() {
           </HStack>
         </Box>
 
-        <Icon as={IoMdSettings} color="#008ED6" height='20px'width='20px'  alignSelf={'center'}/>
+        <Icon as={IoMdSettings} color="#008ED6" height='20px'width='20px' mt="400px"  alignSelf={'center'}/>
       </VStack>
     </Box>
   );

@@ -1,5 +1,5 @@
-import Navbar from '@/components/MainContent/page'
-import Sidebar from '@/components/Sidebar/page'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 

@@ -21,6 +21,7 @@ body {
   line-height: 27px;
   color:#008ED6 ;
   
+  
 }
 
 
@@ -57,6 +58,10 @@ body {
   font-size: 16px;
   line-height: 24px;
   color:#5A5959 ;
+}
+
+.span-date{
+  color:#006598;
 }
 
 .private-notes{
@@ -103,3 +108,55 @@ body {
   color:#006598 ;
 
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 250px auto 300px; /* Sidebar - Main Content - Right Section */
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+      grid-template-columns: 1fr; /* Stacks everything in a single column */
+  }
+
+  .sidebar {
+      display: none; /* Hide sidebar on small screens */
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+      grid-template-columns: 1fr 1fr; /* Two-column layout for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+
+  .activity-feed,
+  .related-connections {
+      flex-direction: column;
+  }
+}
+
+.sidebar {
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 0;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+
+
+

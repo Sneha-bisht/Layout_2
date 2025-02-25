@@ -29,17 +29,21 @@ function MutualInfo() {
               <Avatar
                 src="https://images.unsplash.com/photo-1511806754518-53bada35f930"
                 name="Jerome Bell"
-              />
-              <Stack >
-                <Text fontWeight="semibold" textStyle="sm">
+                 />
+              <Stack>
+                <Text fontWeight="semibold" textStyle="sm" ml='3'>
                   Jerome Bell
                 </Text>
-                <Text display="Flex" mt='2'>
+                <Box display="Flex" mt='2' justifyContent={'spacebetween'} gap={9}>
+                <Box display={'grid'}>
                 <Text><span>Email CC</span></Text>
                 <Text color='#008ED6'><span>7 times</span></Text>
+                </Box>
+                <Box display={'grid'} >
                 <Text><span>Meetings</span></Text>
-                <Text color='#008ED6' ><span>2 times</span></Text>
-                </Text>
+                <Text color='#008ED6'><span>2 times</span></Text>
+                </Box>
+                </Box>
               </Stack>
             </HStack>
 
@@ -50,16 +54,20 @@ function MutualInfo() {
                 name="Robert
                 Jones"
               />
-              <Stack >
-                <Text fontWeight="semibold" textStyle="sm">
+              <Stack  mr='7'>
+                <Text fontWeight="semibold" textStyle="sm" ml='3'>
                   Robert Jones
                 </Text>
-                <Text display="Flex"  justifyContent={"space-evenly"}>
+                <Box display="Flex"  justifyContent={"space-evenly"} gap='9'>
+                <Box display={'grid'}>
                 <Text><span>Email CC</span></Text>
                 <Text color='#008ED6'><span>7 times</span></Text>
+                </Box>
+                <Box _disabled={'grid'}>
                 <Text><span>Meetings</span></Text>
                 <Text color='#008ED6' ><span>2 times</span></Text>
-                </Text>
+                </Box>
+                </Box>
               </Stack>
             </HStack>
           </HStack>

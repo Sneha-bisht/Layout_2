@@ -3,7 +3,7 @@ import { Avatar, Button, Box, HStack, Stack, Text, Progress } from "@chakra-ui/r
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-function Connections() {
+function RConnections() {
   return (
     <Box
       className="ml-6 p-6 shadow-md rounded-lg border border-gray-200" width={448} height={330} mt='5'bg='#F8FAFB'
@@ -68,4 +68,4 @@ function Connections() {
   );
 }
 
-export default Connections;
+export default RConnections;
